@@ -1,1 +1,3 @@
-# restaurant
+# Restaurant
+
+Restaurant page using Javascript.
