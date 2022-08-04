@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+*, *::after, *::before {
+    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lora', serif;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 2rem;
+    height: 100vh;
+}
+
+.header-content {
+    height: 20%;
+    display: flex;
+    width: 100%;
+}
+
+.header-content .logo {
+    width: 50%;
+}
+
+.header-content ul {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.header-content .nav-list {
+    width: 130px;
+    height: 40px;
+    padding: 10px 25px;
+    border: 2px solid #000;
+    font-weight: 500;
+    text-align: center;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+
+.nav-list {
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+.nav-list:after {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+    -webkit-transform: scale(.1);
+    transform: scale(.1);
+  }
+.nav-list:hover {
+    color: #fff;
+  }
+.nav-list:hover:after {
+    background: #000;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  .nav-list.selected {
+    background: #000;
+    color: white;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+#content-wrapper {
+    height: 85%;
+}
+#content {
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+    padding: 2rem;
+    flex-direction: column;
+    height: 100%;
+}
+.body-content .story {
+    font-size: 2.5rem;
+}
+
+.order-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; 
+    margin-top: 1.75rem;
+}
+
+.order-content .order {
+    width: 130px;
+    height: 40px;
+    padding: 10px 25px;
+    border: 2px solid #000;
+    font-family: inherit;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+
+.info-content {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: auto;
+    
+}
+
+.address, .hours{
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+
+.footer {
+    text-align: center;
+}
+
+a, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: inherit;
+}
