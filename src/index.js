@@ -37,8 +37,7 @@ function renderPage(page) {
         orderBtn[0].addEventListener('click', e =>
         {
             content.innerHTML = '';
-            content.appendChild(menu());
-        
+            content.appendChild(menu());        
         });
     }
     else if(page === '2') {
@@ -52,7 +51,7 @@ function renderPage(page) {
     }
 }
 
-content.appendChild(home());
+renderPage('1');
 
 
 

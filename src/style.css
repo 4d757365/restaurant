@@ -73,12 +73,7 @@ body {
     -webkit-transform: scale(1);
     transform: scale(1);
   }
-  .nav-list.selected {
-    background: #000;
-    color: white;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
+
 #content-wrapper {
     height: 85%;
 }
