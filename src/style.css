@@ -75,7 +75,7 @@ body {
   }
 
 #content-wrapper {
-    height: 85%;
+    height: 100%;
 }
 #content {
     display: flex;
@@ -130,4 +130,35 @@ body {
 a, a:visited, a:hover, a:active {
     text-decoration: none;
     color: inherit;
+}
+
+#menu {
+    height: 100%;
+}
+
+#menu .menu-items {
+    display: grid;
+    grid-template-areas: 
+    "item item item";
+    height: 100%;
+}
+.menu-items .item {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-between;
+    padding: 1rem;
+    border: 1px solid black;
+}
+.item h3{
+    display: inline-block;
+}
+
+.item img {
+    width: 0;
+    min-width: 100%;
+    border-radius: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
